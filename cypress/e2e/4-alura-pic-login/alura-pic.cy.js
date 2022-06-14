@@ -6,7 +6,7 @@ describe('alura pic login',() =>{
     );
     it.only('login valido', ()=>{
         cy.login('flavio','123');
-        cy.contains('a','(Logout)').should('be.visible')
+        cy.contains('a','Logout').should('be.visible')
 
     })
     it.only('login invalido', ()=>{
